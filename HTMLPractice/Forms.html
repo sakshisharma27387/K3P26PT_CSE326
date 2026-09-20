@@ -6,32 +6,90 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action="/htmlbasics.html" method="post">
+        <fieldset>
+            <legend><b>Registration Form:</b></legend>
         <label for="f1">First Name:</label>
         <input type="text" id="f1" 
-        name="firstname" maxlength="8" placeholder="Enter Firstname">
+        name="firstname" maxlength="8" placeholder="Enter Firstname" required 
+        value="Sakshi" readonly>
         <br><br>
         <label for="l1">Last Name:</label>
         <input type="text" id="l1" name="lastname">
-
+<!-- 
         <br><br>
          <label for="p1">Password:</label>
-        <input type="password" id="p1" name="Password">
+        <input type="password" id="p1" name="Password" autofocus>
 
         <br><br>
          <label for="e1">Email:</label>
-        <input type="email" id="e1" name="email">
+        <input type="email" id="e1" name="email" disabled>
 
         <br><br>
 
         <label for="review">Enter Review:</label><br>
         <textarea name="review" id="review" 
-        rows="10" cols="50"></textarea>
+        rows="10" cols="50">Good review</textarea> -->
+
+        <!-- <br><br>
+
+        <label for="">Select Sports:</label> <br>
+
+        <input type="checkbox" name="sports" id="volley" value="Volleyball">
+        <label for="volley">Volleyball</label>
+
+        <input type="checkbox" name="sports" id="cricket" value="cricket">
+        <label for="cricket">Cricket</label>
+
+        <input type="checkbox" name="sports" id="football" value="Football" checked>
+        <label for="football">Football</label>
+
+        <br><br>
+
+        <label for="">Choose Course</label><br>
+
+        <input type="radio" id="btech" value="btech" name="course">
+        <label for="btech">B.Tech</label>
+        <input type="radio" id="bca" value="bca" name="course" checked>
+        <label for="bca">BCA</label>
+         <input type="radio" id="bsc" value="bsc" name="course">
+        <label for="bsc">B.Sc</label> -->
+
+        <!-- <br><br>
+        <label for="">Choose State</label> <br>
+        <select name="state" id="state" size="2" multiple>
+            <option value="punjab">Punjab</option>
+            <option value="haryana">Haryana</option>
+            <option value="ap" selected>Andhra Pradesh</option>
+        </select>
+        <br><br>
+        <label for="upload"></label>
+        <input type="file" name="upload" id="upload" accept="image/*">
+        <br><br> -->
+
+        <label for="marks">Enter Marks:</label>
+        <input type="number" id="marks" name="marks" min="3" max="30" step="5">
+        <br>
+        <input type="date">
+        <input type="time">
+
+        <br>
+        <input type="range" max="100" value="20">
+
+        <br><br>
+        <progress max="100" value="40"></progress>
+
+        <br><br>
+
+
+        <input type="submit" name="submit" id="submit" value="submit form">
+        <input type="reset" name="reset" id="reset">
+        <input type="button" value="OK">
 
 
 
 
-
+</fieldset>
     </form>
 </body>
 </html>
