@@ -4,22 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            color: brown;
+        }
+        h3::before{
+            content: "heading-";
+        }
+        a:hover{
+            color: green;
+        }
+        p:first-child{
+            color: green;
+        }
+        p:last-child{
+            color: tomato;
+        }
+        /* Combinator Selector */
+         header h1{
+            color: violet;
+        }
+
+        #k1{
+            color: blue;
+        }
+
+         #main1{
+            background-color: skyblue;
+         }
+
+        header{
+            background-color: antiquewhite;
+            
+        }
+
+        a{
+            color: yellowgreen;
+        }
+
+        a[href="https://www.google.co.in/"]{
+            background-color: violet;
+        }
+        .s1{
+            background-color: yellowgreen;
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/mystyle.css">
 </head>
 <body>
+    <h1>Hello</h1>
     <header>
         <h1>My Tour Blog</h1>
         
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="https://www.google.co.in/">Home</a>
+            <a href="https://ums.lpu.in/lpuums/facultydashboard.aspx">About</a>
             <a href="#">Tours</a>
             <a href="#">Contact</a>
         </nav>
     </header>
 
-    <main>
+    <main id="main1">
 
         <section>
+            <p>this is paragraph</p>
+            <h3>section1</h3>
+            <p>This is para1</p>
+        </section>
+
+        <section class="s1">
             <code>function add(){
                 console.log("Addition");
             }
@@ -37,10 +90,10 @@
 
             <p>We are studying <abbr title="Hypertext MArkup language">HTML</abbr></p>
         </section>
-        <section>
+        <section class="s1">
             <h2>National Trips</h2>
             <article>
-                <h3>Kerala Trip</h3>
+                <h3 id="k1">Kerala Trip</h3>
                 <p>Write down something about kerala</p>
             </article>
 
@@ -50,7 +103,7 @@
             </article>
         </section>
 
-        <section>
+        <section class="s1">
             <h2>International Trips</h2>
         </section>
 
