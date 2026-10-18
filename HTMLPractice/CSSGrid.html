@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            border: brown 2px solid;
+            padding: 20px;
+            display: grid;
+            /* grid-template-columns: 150px auto auto auto;
+            grid-template-rows: 200px 150px; */
+            grid-template: 200px 150px/ 150px auto auto;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+        }
+        .item{
+            background-color: lightcoral;
+            border: 1px solid green;
+            padding: 10px;
+            
+        }
+
+        #i4{
+            grid-row-start: 1;
+            grid-row-end: span 3;
+        }
+        #i7{
+            grid-column-start: 3;
+            grid-column-end: span 2;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">Section 1</div>
+        <div class="item">Section 2</div>
+        <div class="item">Section 3</div>
+        <div class="item" id="i4">Section 4</div>
+        <div class="item">Section 5</div>
+        <div class="item">Section 6</div>
+        <div class="item" id="i7">Section 7</div>
+        <div class="item">Section 8</div>
+    </div>
+</body>
+</html>
