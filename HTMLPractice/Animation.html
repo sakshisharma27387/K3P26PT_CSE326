@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            position: absolute;
+            background-color: aqua;
+            border: 2px solid blue;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            /* transition: 3s transform; */
+            animation: move 3s alternate infinite;
+        }
+
+        @keyframes move {
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform: scale(1.5);
+            }
+            
+        }
+        /* #d1:hover{
+            transform:scale(1.5);
+        } */
+    </style>
+</head>
+<body>
+    <div id="d1">Div1</div>
+</body>
+</html>
