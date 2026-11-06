@@ -13,8 +13,51 @@
     <!-- Internal JS -->
     <script>
         console.log("Welcome to Javascript Class");
+        console.log(10+6);
+        var marks = 40;
+        var section = "K26PT";
+        var isPass = true;
+        var newval = null;
+        console.log("My marks are:" , marks , "my section is:", section);
+        console.log(isPass);
+        console.log(newval);
+
+        console.log(typeof marks, typeof section, typeof isPass, typeof newval);
+
+
+        // var,let and const difference
+
+        //1. Block access difference
+        if(5>3){
+            var a = 20;
+            console.log(a);
+        }
+        console.log(a);
+
+
+        //2.
+
+        let x;
+        console.log(x);
+
+        //3. Redeclaration
+
+        var y = 50;
+        var y = "PT";
+        console.log(y);
+
+        //4. Reassignment
+        var w = 30;
+        w = 90;
+        console.log(w);
+
+        //5. hoisting
+
+        console.log(q);
+        var q = 80;
+
     </script>
 
-    <script src="/Javascript/mystyle.js"></script>
+    <!-- <script src="/Javascript/mystyle.js"></script> -->
 </body>
 </html>
