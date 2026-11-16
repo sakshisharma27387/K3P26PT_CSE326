@@ -52,22 +52,68 @@
 
         // Looping statements
 
-        // for(let i = 3; i<=15; i++){
-        //     console.log(i);
-        // }
+        for(let i = 3; i<=15; i++){
 
-        let j = 11;
-        while(j<=10){
-            console.log(j);
-            j++;
+            if(i==6){
+                break;
+            }
+            console.log(i);
         }
 
+        // let j = 11;
+        // while(j<=10){
+        //     console.log(j);
+        //     j++;
+        // }
 
-        let k = 91;
-        do{
-            console.log(k);
-            k++;
-        }while(k<=90)
+
+        // let k = 91;
+        // do{
+        //     console.log(k);
+        //     k++;
+        // }while(k<=90)
+
+
+        //functions
+
+        function greetings(){
+            console.log("Good Morning!!!")
+        }
+
+        greetings();
+        greetings();
+
+        function addition(a,b,c){
+           return a+b+c;
+        }
+        console.log("The sum is:" , addition(3,5,2));
+
+        //arrow function
+        const subtraction = (m,n) => {return m-n};
+        console.log(subtraction(3,1));
+
+        const greet = () =>{return "Hello"};
+        console.log(greet());
+
+        // String Functions
+
+        let str1 = "  Javas cript  ";
+        let str2 = "CSE326";
+
+        console.log("We are studying", str1 , "in", str2);
+
+        //String Template
+
+        console.log(`We are studying ${str1} in ${str2}`);
+
+        console.log(str1.indexOf("v"));
+        console.log(str1.charAt(5));
+        console.log(str1.trim().length);
+        console.log(str1);
+
+
+
+
     </script>
 </body>
 </html>
