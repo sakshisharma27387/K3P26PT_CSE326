@@ -11,28 +11,28 @@
         // let x = 90;
         // let y = 20;
         // console.log(x+y, x-y, x*y, x/y, x%y);
-        var q = 70;
-        console.log(q++);//70
-        console.log(q);//71
+        // var q = 70;
+        // console.log(q++);//70
+        // console.log(q);//71
 
-        //Assignment Operators
-        let x1 = 10;
-        let y1= 20;
-        console.log(x1+=y1,x1-=y1, x1*=y1);
+        // //Assignment Operators
+        // let x1 = 10;
+        // let y1= 20;
+        // console.log(x1+=y1,x1-=y1, x1*=y1);
         
         //Comparison Operators
 
-        let x2 = 90;
-        let y2 = 10;
-        console.log(x2>=y2);
+        // let x2 = 90;
+        // let y2 = 10;
+        // console.log(x2>=y2);
 
-        //Logical
-        let x = 90;
-        let y =10;
-        console.log(x>y && x<=y)
-        console.log(x<y || x>=y)
-        console.log(!(x>y))
-        console.log(!(x<y))
+        // //Logical
+        // let x = 90;
+        // let y =10;
+        // console.log(x>y && x<=y)
+        // console.log(x<y || x>=y)
+        // console.log(!(x>y))
+        // console.log(!(x<y))
 
         //Branching Statements
 
@@ -80,29 +80,33 @@
             console.log("Good Morning!!!")
         }
 
-        greetings();
-        greetings();
+        // greetings();
+        // greetings();
 
-        function addition(a,b,c){
-           return a+b+c;
-        }
-        console.log("The sum is:" , addition(3,5,2));
+        // function addition(a,b,c){
+        //    return a+b+c;
+        // }
+        // console.log("The sum is:" , addition(3,5,2));
 
         //arrow function
-        const subtraction = (m,n) => {return m-n};
-        console.log(subtraction(3,1));
+        // const subtraction = (m,n) => {return m-n};
+        // console.log(subtraction(3,1));
 
-        const greet = () =>{return "Hello"};
-        console.log(greet());
+        // const greet = () =>{return "Hello"};
+        // console.log(greet());
 
         // String Functions
 
+      
+        
+
+     
+
+        //String Template
         let str1 = "  Javas cript  ";
         let str2 = "CSE326";
 
-        console.log("We are studying", str1 , "in", str2);
-
-        //String Template
+           console.log("We are studying", str1 , "in", str2);
 
         console.log(`We are studying ${str1} in ${str2}`);
 
@@ -110,6 +114,68 @@
         console.log(str1.charAt(5));
         console.log(str1.trim().length);
         console.log(str1);
+        console.log(str1.includes("q"));
+        console.log(str1.slice(2,5));
+        console.log(str1.replace("J","T"));
+
+        //Array Methods
+        let array1 = ["a","b","c","d"];
+
+        // array1.push("K26PT");//add element at last
+        // console.log(array1);
+        // array1.unshift("CSE326");//addd element in the beginning
+        // console.log(array1);
+        // array1.pop();
+        // console.log(array1);
+        // array1.shift();
+        // console.log(array1);
+        // console.log(array1.slice(1,3));
+        // array1.splice(0,2,"mango","grapes");
+        // console.log(array1);
+        // array1.splice(3,1,"onion");
+        // console.log(array1);
+
+
+        //Objects
+
+        let student = {
+            rollno:1,
+            name:"Raj",
+            state:"Punjab"
+        }
+
+        console.log(student.rollno,student.name,student["state"]);
+
+        //Create multiple objects with constructor function
+
+        function Book(publisher,name){
+            this.publisher1 = publisher;
+            this.name = name;
+        }
+
+        let b1 = new Book("Pearson", "Web Development");
+        console.log(b1.publisher1);
+        let b2 = new Book("BPB","Python");
+        console.log(b2.name);
+
+        //Error Handling
+
+        let mark = 104;
+
+
+        try{
+            if(mark<0 || mark>100){
+                throw new Error("Invalid input");
+            }
+            console.log(mark)
+        }
+        catch(err){
+            console.log(err.message);
+        }
+        finally{
+            console.log("Done");
+        }
+
 
 
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">this is heading 1</h1>
+    <p class="p1">Para1</p>
+    <p class="p1">Para2</p>
+    <p class="p1">Para3</p>
+
+
+    <script>
+        let h1 = document.getElementById("head1");
+        console.log(h1.textContent);
+        h1.onclick=function(){
+            alert("Hello");
+        }
+
+       let para =  document.getElementsByClassName("p1");
+       console.log(para.length);
+
+       let paras =  document.getElementsByTagName("p");
+       console.log(para.length);
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // function calculate(a,b){
+        //     return a+b;
+        // }
+        // function highorder(callback){
+        //     console.log(callback(3,4));
+        // }
+        // highorder(calculate);
+
+    </script>
+</body>
+</html>
